@@ -9,7 +9,6 @@ const Cards = ({
   humidity = 60,
   waterLevel = 50 
 }) => {
-  // Function to create RadialBarChart for various parameters
   const createRadialBarChart = (value, label, fill, domainMax) => (
     <ResponsiveContainer width="100%" height={200}>
       <RadialBarChart innerRadius="10%" outerRadius="80%" data={[{ name: label, value, fill }]} startAngle={90} endAngle={450}>
